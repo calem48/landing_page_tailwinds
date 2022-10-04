@@ -4,3 +4,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.active {
+    @apply bg-white fixed text-black shadow-nav
+}
+
+.active .container {
+    @apply py-[10px] duration-[0.5s]
+}
+
+/* .header {
+    @apply pb-[150px] pt-[150px] wrapper relative bg-no-repeat bg-cover before: absolute before:border-[0px_50vw_45px_0px] 
+    before:border-solid before:border-[red_transparent_white_white] before:bottom-[0] after:absolute 
+    after:border-solid after:border-[45px_50vw_0px_0px] after:border-[transparent_white_blue_white] after:right-0 after:bottom-0
+} */
+
+.info ul li {
+    @apply leading-[30px] flex items-center gap-[20px]
+}
+
+.info ul li i {
+    @apply text-custom-blue
+}
+
+footer {
+    background: linear-gradient(to right, rgba(0, 24, 117, 0.97), rgba(0, 118, 222, 0.9))
+}
+
+@media (max-width: 1023px) {
+    header {
+        @apply bg-white fixed text-black shadow-nav
+    }
+
+    .cards {
+        @apply py-[150px]
+    }
+
+    .info .container ul {
+        @apply w-[100%] items-center
+    }
+
+    .info .container {
+        @apply text-center
+    }
+}
+
+@media (max-width: 767px) {
+    footer .copy {
+        @apply flex-col
+    }
+}

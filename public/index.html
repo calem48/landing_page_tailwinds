@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -21,8 +22,9 @@
     before:border-solid before:border-[red_transparent_white_white] before:bottom-[0] after:absolute after:border-solid
     after:border-[45px_50vw_0px_0px] after:border-[transparent_white_blue_white] after:right-0 after:bottom-0 "
         style="background-image: url('./images/AnimatedShape.svg')">-->
-    <header class=" fixed w-[100%] z-50 ">
-        <div class="container flex justify-between items-center py-[20px]">
+
+    <header class=" absolute  w-[100%] z-50 stcik ">
+        <div class="container   flex justify-between items-center py-[20px] duration-[0.5s]">
             <div class=" flex items-center w-[100%] justify-between">
                 <div class="flex items-center gap-[10px] ">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
@@ -31,14 +33,14 @@
                             d="M24,4C12.96,4,4.01,12.954,4.01,24	c0,10.141,7.545,18.519,17.325,19.823v-4.03c0-1.136-0.716-2.158-1.793-2.519c-5.643-1.897-9.68-7.293-9.531-13.611	c0.181-7.692,6.444-13.74,14.133-13.662c7.662,0.078,13.849,6.316,13.849,14c0,0.72-0.056,1.44-0.164,2.151	c-1.713,11.291-16.412,17.637-16.492,17.672C22.208,43.939,23.097,44,24,44c11.04,0,19.99-8.954,19.99-20S35.04,4,24,4"
                             clip-rule="evenodd"></path>
                     </svg>
-                    <span class="text-[24px] text-white font-bold tracking-[5px] ">logo</span>
+                    <span class="text-[24px] font-bold tracking-[5px] ">logo</span>
                 </div>
-                <div class="bar md:hidden block ">
+                <div class="bar lg:hidden block ">
                     <i class="fa-solid fa-bars text-[25px] "></i>
                 </div>
             </div>
             <div class="right  ">
-                <nav class="hidden md:block">
+                <nav class="hidden lg:block">
                     <ul class="  flex items-center ">
                         <li class="p-[15px]"><a href="">Home</a></li>
                         <li class="p-[15px]"><a href="">Services</a></li>
@@ -50,7 +52,7 @@
             </div>
         </div>
     </header>
-    <div class="hero pb-[100px] pt-[100px] wrapper relative  bg-no-repeat bg-cover before:absolute before:border-[0px_50vw_45px_0px] 
+    <div class="hero pb-[150px] pt-[150px] wrapper relative  bg-no-repeat bg-cover before:absolute before:border-[0px_50vw_45px_0px] 
         before:border-solid before:border-[red_transparent_white_white] before:bottom-[0] after:absolute after:border-solid
         after:border-[45px_50vw_0px_0px] after:border-[transparent_white_blue_white] after:right-0 after:bottom-0 "
         style="background-image: url('./images/AnimatedShape.svg') ">
@@ -77,6 +79,194 @@
     </div>
     <!-- </div>-->
 
+    <div class="cards text-gray-400  relative  xl:top-[-70px] lg:top-[-70px]   ">
+        <div class="container grid grid-cols-custom-card gap-[50px] text-center lg:grid-cols-custom-card-2 ">
+            <div class="card card-second shadow-card-md xl:shadow-custom bg-white p-[30px_25px]  ">
+                <img src="images/icon1.png" alt="" class="m-[0px_auto] ">
+                <div class="card-content">
+                    <h1 class="text-custom-blue mb-[20px] ">Title of the card</h1>
+                    <p class="mb-[20px] leading-[30px]">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
+                    <a class="text-custom-blue" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card card-second shadow-card-md xl:shadow-custom bg-white p-[30px_25px]">
+                <img src="images/icon2.png" alt="" class="m-[0px_auto]">
+                <div class="card-content">
+                    <h1 class="text-custom-blue mb-[20px] ">Title of the card</h1>
+                    <p class="mb-[20px] leading-[30px]">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
+                    <a class="text-custom-blue" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card card-second shadow-card-md xl:shadow-custom bg-white p-[30px_25px]">
+                <img src="images/icon3.png" alt="" class="m-[0px_auto]">
+                <div class="card-content">
+                    <h1 class="text-custom-blue mb-[20px] ">Title of the card</h1>
+                    <p class="mb-[20px] leading-[30px] ">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                        Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
+                    <a class="text-custom-blue" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="text-gray-400 py-[150px] info">
+        <div class="faq-title flex flex-col items-center text-center pb-[50px] ">
+            <div class="icon relative">
+                <svg width="50" height="50">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgba(0, 24, 117 , .97)" />
+                            <stop offset="100%" style="stop-color:rgba(0, 118, 222, .9)" />
+                        </linearGradient>
+                    </defs>
+                    <polygon fill="url(#grad1)"
+                        points="37.32050807568878,30 20,40 2.679491924311229,30.000000000000007 2.679491924311222,10.000000000000005 19.999999999999996,0 37.32050807568878,10.000000000000007">
+                    </polygon>
+                </svg>
+                <i class="bx bx-message-alt-detail absolute left-[25%] top-[25%] "></i>
+            </div>
+            <h1 class=" py-[20px] text-custom-blue text-[35px] font-bold ">Best feature in our company</h1>
+        </div>
+        <div class="container grid grid-cols-custom-grid-third gap-[50px] items-center justify-items-center">
+            <div class="details">
+                <h1 class="text-[30px] text-black pb-[25px] ">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                    industry</h1>
+                <ul class="flex flex-col justify-between gap-[20px] w-[80%]">
+                    <li>
+                        <i class="bx bx-badge-check"></i>
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                    </li>
+                    <li>
+                        <i class="bx bx-badge-check"></i>
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                    </li>
+                    <li>
+                        <i class="bx bx-badge-check"></i>
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                    </li>
+                    <li>
+                        <i class="bx bx-badge-check"></i>
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                    </li>
+                    <li>
+                        <i class="bx bx-badge-check"></i>
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="details-picture relative">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="584" height="584">
+                    <path stroke="none" fill="#fff"
+                        d="M265.5 7.2997821335251a53 53 0 0 1 53 0l206.80762113533 119.40043573295a53 53 0 0 1 26.5 45.899346400575l0 238.8008714659a53 53 0 0 1 -26.5 45.899346400575l-206.80762113533 119.40043573295a53 53 0 0 1 -53 0l-206.80762113533 -119.40043573295a53 53 0 0 1 -26.5 -45.899346400575l3.8032855285204e-13 -238.8008714659a53 53 0 0 1 26.5 -45.899346400575">
+                    </path>
+                </svg> -->
+                <img src="images/2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container text-gray-400 py-[150px] ">
+        <div class="faq-title flex flex-col items-center text-center ">
+            <div class="icon relative">
+                <svg width="50" height="50">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgba(0, 24, 117 , .97)" />
+                            <stop offset="100%" style="stop-color:rgba(0, 118, 222, .9)" />
+                        </linearGradient>
+                    </defs>
+                    <polygon fill="url(#grad1)"
+                        points="37.32050807568878,30 20,40 2.679491924311229,30.000000000000007 2.679491924311222,10.000000000000005 19.999999999999996,0 37.32050807568878,10.000000000000007">
+                    </polygon>
+                </svg>
+                <i class="bx bx-message-alt-detail absolute left-[25%] top-[25%] "></i>
+            </div>
+            <h1 class=" py-[20px] text-custom-blue text-[35px] font-bold ">Frequently Asked Questions</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s</p>
+        </div>
+
+        <div class="card grid grid-cols-custom-card gap-[50px] justify-items-center py-[50px] text-center ">
+            <div class="card card-fourth shadow-custom p-[30px_20px]">
+                <img src="images/github.png" alt="" class="w-[80px] inline">
+                <div class="card-content">
+                    <h1 class=" pt-[20px] ">Title For Card</h1>
+                    <p class=" py-[20px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="card card-fourth shadow-custom p-[30px_20px]">
+                <img src="images/discord.png" alt="" class="w-[80px] inline">
+                <div class="card-content">
+                    <h1 class=" pt-[20px] ">Title For Card</h1>
+                    <p class=" py-[20px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class=" card card-fourth shadow-custom p-[30px_20px]">
+                <img src="images/slack.png" alt="" class="w-[80px] inline">
+                <div class="card-content">
+                    <h1 class=" pt-[20px] ">Title For Card</h1>
+                    <p class=" py-[20px] ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+        <a class="show_more flex  p-[8px_25px] w-[fit-content] m-[0_auto] text-white   bg-[#00e4ee] " href="">Show
+            More</a>
+    </section>
+
+    <footer class="py-[50px]">
+        <div class="container text-gray-400 flex flex-col justify-center items-center  w-[100%] gap-[50px]">
+            <div class="subscribe flex flex-col justify-center items-center gap-[20px] w-[100%] ">
+                <div class="icon relative  ">
+                    <svg width="50" height="50">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:rgba(0, 24, 117 , .97)" />
+                                <stop offset="100%" style="stop-color:rgba(0, 118, 222, .9)" />
+                            </linearGradient>
+                        </defs>
+                        <polygon fill="url(#grad1)"
+                            points="37.32050807568878,30 20,40 2.679491924311229,30.000000000000007 2.679491924311222,10.000000000000005 19.999999999999996,0 37.32050807568878,10.000000000000007">
+                        </polygon>
+                    </svg>
+                    <i class="bx bx-message-alt-detail absolute left-[25%] top-[25%] "></i>
+                </div>
+                <h1>Stay updated !</h1>
+                <div class=" py-[40px] relative w-[60%]">
+                    <input type="text" placeholder="Enter your email" class="w-[100%] h-[45px] pl-[29px] outline-0">
+                    <i class='bx bxs-envelope absolute left-0 text-[25px] top-[50px] pl-[2px] '></i>
+                </div>
+                <button
+                    class="flex  p-[8px_25px] w-[fit-content] m-[0_auto] text-white   bg-[#00e4ee]">Subscribe</button>
+            </div>
+            <div class="copy flex justify-between items-center gap-[50px] w-[100%]  ">
+                <div class="social">
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxs-file'></i>
+                </div>
+
+                <p>© 2022 Copyright, All rights reserved galaxyprogs</p>
+                <p>Made with <i class='bx bxs-heart'></i> by <a href="#">Misso</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/js.js"></script>
 </body>
 
 </html>
